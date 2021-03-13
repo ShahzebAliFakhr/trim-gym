@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Page Title and Fav Icons -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<title>MEMBERSHIP - TRIM GYM | Turn Your FAT Into FIT</title>
+
+	<!-- Fonts -->
+	<!-- Montserat -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+	<!-- Maven Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+	<!-- Style Sheets -->
+	<!-- Bootstrap 4 CSS File -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- FontAwesome CSS File -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+	<!-- Animate CSS File -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+
+	<!-- Lightbox CSS File -->
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+	<!-- Flip CSS File -->
+	<link rel="stylesheet" href="assets/css/flip.css">
+
+	<!-- Main CSS File -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- Internal CSS -->
+	<style>
+		body {
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/img/membership_bg.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Starts of Navigation Bar -->
+
+	<div class="container-fluid sticky-top" id="navigation">
+
+		<nav class="navbar navbar-expand-md">
+
+			<a href="index.html" class="navbar-brand">
+				<img src="assets/img/logo.png" alt="Trim Gym Logo" class="logo">
+			</a>
+
+			<span class="navbar-toggler fa fa-bars fa-2x" data-toggle="collapse" data-target="#navbar-collapse"></span>
+
+			<div id="navbar-collapse" class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav ml-auto text-center">
+
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="programs.html" class="nav-link">PROGRAMS</a>
+					</li>
+					<li class="nav-item">
+						<a href="membership.html" class="nav-link active">MEMBERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">CONTACT</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-none d-lg-block d-md-block d-xl-block">
+							<i class="fa fa-user"></i>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-block d-md-none d-lg-none d-xl-none">JOIN US</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</nav>
+
+	</div>
+
+	<!-- Ends of Navigation Bar -->
+
+	<!-- Starts of Modals -->
+
+
+
+
+
+	<!-- Login/Signup Modal -->
+	<div class="modal fade" id="userModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title text-base">Join US!</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+
+				<!-- Modal Body -->
+				<div class="modal-body">
+
+					<ul class="nav nav-pills nav-justified mb-3">
+
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="pill" href="#login">LOGIN</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="pill" href="#signup">SIGNUP</a>
+						</li>
+
+					</ul>
+
+					<div class="tab-content">
+
+						<div class="tab-pane fade show active" id="login">
+
+							<!-- Login Form -->
+							<form method="post">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Remember me
+									</label>
+									<br>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mb-3">LOGIN</button>
+							</form>
+
+						</div>
+
+						<div class="tab-pane fade" id="signup">
+
+							<!-- Signup  Form -->
+							<form method="post">
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="First Name" required>
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="Last Name" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required>
+								</div>
+
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Repeat Password" required>
+								</div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="male">
+									<label class="form-check-label">Male</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="female">
+									<label class="form-check-label">Female</label>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mt-3 mb-3">SIGNUP</button>
+
+								<small class="form-text text-muted mb-3">
+									By signing up, you agree to our
+									<a href="#">Terms & Conditions.</a>
+								</small>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Modals -->
+
+	<!-- Starts of Membership Section -->
+	<div class="container-fluid" id="membership">
+		<div class="container">
+			<h2 class="text-center text-base animated fadeInDown section-heading">CHOOSE YOUR MEMBERSHIP PLAN</h2>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card text-center">
+						<div class="title">
+							<i class="fa fa-paper-plane"></i>
+							<h2>Basic</h2>
+						</div>
+						<div class="price">
+							<h4>
+								<sup>$</sup>25</h4>
+						</div>
+						<div class="option">
+							<ul>
+								<li>
+									<i class="fa fa-check"></i> Full Music</li>
+								<li>
+									<i class="fa fa-check"></i> Flexible Hours</li>
+								<li>
+									<i class="fa fa-check"></i> Only Aerobix Excercise</li>
+								<li>
+									<i class="fa fa-times"></i> Air Conditined Rooms</li>
+								<li>
+									<i class="fa fa-check"></i> Locker Rooms</li>
+								<li>
+									<i class="fa fa-times"></i> Seperated for Men And Women</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card text-center">
+						<div class="title">
+							<i class="fa fa-plane"></i>
+							<h2>Standard</h2>
+						</div>
+						<div class="price">
+							<h4>
+								<sup>$</sup>50</h4>
+						</div>
+						<div class="option">
+							<ul>
+								<li>
+									<i class="fa fa-check"></i> Full Music</li>
+								<li>
+									<i class="fa fa-check"></i> Flexible Hours</li>
+								<li>
+									<i class="fa fa-check"></i> Aerobic & Machines Excercise</li>
+								<li>
+									<i class="fa fa-times"></i> Air Conditined Rooms</li>
+								<li>
+									<i class="fa fa-check"></i> Locker Rooms</li>
+								<li>
+									<i class="fa fa-check"></i> Seperated for Men And Women</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card text-center">
+						<div class="title">
+							<i class="fa fa-rocket"></i>
+							<h2>Premium</h2>
+						</div>
+						<div class="price">
+							<h4>
+								<sup>$</sup>100</h4>
+						</div>
+						<div class="option">
+							<ul>
+								<li>
+									<i class="fa fa-check"></i> Full Music</li>
+								<li>
+									<i class="fa fa-check"></i> Flexible Hours</li>
+								<li>
+									<i class="fa fa-check"></i> High Quality Machines</li>
+								<li>
+									<i class="fa fa-check"></i> Air Conditined Rooms</li>
+								<li>
+									<i class="fa fa-check"></i> Locker Rooms</li>
+								<li>
+									<i class="fa fa-check"></i> Seperated for Men And Women</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Membership Section -->
+
+	<!-- Starts of Footer -->
+	<!-- Footer Widgets-->
+	<div class="container-fluid" id="footer-widgets">
+
+		<div class="container">
+
+			<div class="row pb-3">
+
+				<!-- 1st Column -->
+				<div class="col-lg-6">
+
+					<h4 class="text-base mt-5 mb-4">ABOUT TRIM GYM</h4>
+					<p class="text-white text-justify">The TrimGYM was founded by the team of TrimGYM 35 years ago. Perhaps that’s why we’re so focused on proper health and
+						fitness benefits, and less on the luxuries that a small percentage of traditional health club members want. Our team
+						has a long and successful history in the gym business. We opened our first health in 1988, building the business to
+						a total of 9 clubs.
+						<a href="about.html">Read More</a>
+					</p>
+
+				</div>
+
+				<!-- 2nd Column -->
+				<div class="col-lg-4" id="getintouch">
+
+					<h4 class="text-base mt-5 mb-4">GET IN TOUCH</h4>
+
+					<ul class="text-white">
+						<li>
+							<i class="far fa-address-card text-base"></i> 4793, Camel Back Road, NY, USA</li>
+						<li>
+							<i class="far fa-envelope-open text-base"></i> info@trimgym.com</li>
+						<li>
+							<i class="fa fa-phone text-base"></i> +1 347 562 2990</li>
+						<li>
+							<i class="fab fa-skype text-base"></i> trimgym</li>
+
+					</ul>
+
+				</div>
+
+				<!-- 3rd Column -->
+				<div class="col-lg-2">
+
+					<h4 class="text-base mt-5 mb-4">SITEMAP</h4>
+
+					<ul>
+
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="programs.html">PROGRAMS</a>
+						</li>
+						<li>
+							<a href="nutrition.html">NUTRITIONS PLAN</a>
+						</li>
+						<li>
+							<a href="exercise.html">EXERCISES</a>
+						</li>
+						<li>
+							<a href="membership.html">MEMBERSHIP</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--Main Footer -->
+	<div class="container-fluid text-white" id="footer">
+		<div class="container">
+			<div class="copyright-box float-left">Copyright &copy; 2018 - Designed by
+				<a class="text-base" href="#">Trim GYM Team</a>
+			</div>
+			<div class="icon-box text-right">
+				<a href="#" class="fab fa-facebook-f" style="background-color:#3b5998"></a>
+				<a href="#" class="fab fa-twitter" style="background-color:#1da1f2"></a>
+				<a href="#" class="fab fa-instagram" style="background-color:#c32aa3"></a>
+				<a href="#" class="fab fa-google-plus-g" style="background-color:#db4437"></a>
+				<a href="#" class="fab fa-youtube" style="background-color:#ff0000"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Footer -->
+
+	<!-- jQuery JS File -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap 4 JS File -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Wayout JS File -->
+	<script src="assets/js/waypoints.min.js"></script>
+
+	<!-- CounterUp JS File -->
+	<script src="assets/js/counterup.min.js"></script>
+
+	<!-- Flip JS File -->
+	<script src="assets/js/flip.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+	<!-- Lightbox JS File -->
+	<script src="assets/js/lightbox.min.js"></script>
+
+</body>
+
+</html>

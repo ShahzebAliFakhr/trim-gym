@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Page Title and Fav Icons -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<title>EXERCISES - TRIM GYM | Turn Your FAT Into FIT</title>
+
+	<!-- Fonts -->
+	<!-- Montserat -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+	<!-- Maven Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+	<!-- Style Sheets -->
+	<!-- Bootstrap 4 CSS File -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- FontAwesome CSS File -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+	<!-- Animate CSS File -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+
+	<!-- Lightbox CSS File -->
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+	<!-- Flip CSS File -->
+	<link rel="stylesheet" href="assets/css/flip.css">
+
+	<!-- Main CSS File -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+
+<body>
+
+	<!-- Starts of Navigation Bar -->
+
+	<div class="container-fluid sticky-top" id="navigation">
+
+		<nav class="navbar navbar-expand-md">
+
+			<a href="index.html" class="navbar-brand">
+				<img src="assets/img/logo.png" alt="Trim Gym Logo" class="logo">
+			</a>
+
+			<span class="navbar-toggler fa fa-bars fa-2x" data-toggle="collapse" data-target="#navbar-collapse"></span>
+
+			<div id="navbar-collapse" class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav ml-auto text-center">
+
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="programs.html" class="nav-link">PROGRAMS</a>
+					</li>
+					<li class="nav-item">
+						<a href="membership.html" class="nav-link">MEMBERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">CONTACT</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-none d-lg-block d-md-block d-xl-block">
+							<i class="fa fa-user"></i>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-block d-md-none d-lg-none d-xl-none">JOIN US</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</nav>
+
+	</div>
+
+	<!-- Ends of Navigation Bar -->
+
+	<!-- Starts of Modals -->
+
+	<!-- Login/Signup Modal -->
+	<div class="modal fade" id="userModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title text-base">Join US!</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+
+				<!-- Modal Body -->
+				<div class="modal-body">
+
+					<ul class="nav nav-pills nav-justified mb-3">
+
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="pill" href="#login">LOGIN</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="pill" href="#signup">SIGNUP</a>
+						</li>
+
+					</ul>
+
+					<div class="tab-content">
+
+						<div class="tab-pane fade show active" id="login">
+
+							<!-- Login Form -->
+							<form method="post">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Remember me
+									</label>
+									<br>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mb-3">LOGIN</button>
+							</form>
+
+						</div>
+
+						<div class="tab-pane fade" id="signup">
+
+							<!-- Signup  Form -->
+							<form method="post">
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="First Name" required>
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="Last Name" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required>
+								</div>
+
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Repeat Password" required>
+								</div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="male">
+									<label class="form-check-label">Male</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="female">
+									<label class="form-check-label">Female</label>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mt-3 mb-3">SIGNUP</button>
+
+								<small class="form-text text-muted mb-3">
+									By signing up, you agree to our
+									<a href="#">Terms & Conditions.</a>
+								</small>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Modals -->
+
+	<!-- Starts of Exercise Section -->
+	<div class="container-fluid" id="exercise">
+    
+    	<h2 class="text-center text-base section-heading animated fadeInDown">EXERCISES WE OFFER</h2>
+       
+        <img src="assets/img/cardio_cover.jpg" class="img-fluid mt-5">
+        
+        <div class="container">
+        
+         <h2 class="text-center text-base section-heading mt-5">CARDIO</h2>
+         
+         <p>Cardio exercise is one of the most important things you can do for your body, whether you want to lose 
+
+weight, burn fat, or generally improve your health. You can use machines like a treadmill or an elliptical 
+
+trainer, or you can create your own workout at home with a variety of cardio exercises like jogging in place, 
+
+jumping jacks, or burpees. Anything that gets your heart rate into your target heart rate zone will work, but 
+
+there are some workouts that give you a little more bang for your buck.</p>
+         <p>There's no "right" cardio exercise, and the best choice for you is the one that is the most challenging, but 
+
+that you can perform safely and enjoy. Exercises that intervals and circuits can help you get the most bang 
+
+for your time spent.</p>
+        
+        </div>
+        
+         <img src="assets/img/muscle_cover.jpg" class="img-fluid mt-5">
+        
+        <div class="container">
+        
+         <h2 class="text-center text-base section-heading mt-5">MUSCLE</h2>
+         
+         <p>Muscular endurance refers to the ability of a given muscle to exert force, consistently and repetitively, 
+
+over a period of time. It plays a big role in almost every athletic endeavor. You might think of muscular 
+
+endurance as stamina.</p>
+         <p>Long-distance running is a sport that requires muscular endurance. During a race, a marathon runner’s body 
+
+performs the same movement and stride, over and over again. This requires their muscles to have an advanced 
+
+level of endurance to avoid injury or extreme fatigue.
+</p>
+         <p>
+But you don’t need to train for a marathon to improve your muscular endurance. For the average person, it can 
+
+be as simple as doing pushups until failure. This means doing one movement repetitively, with good form, 
+
+until you can’t perform it anymore.</p>
+         <p>And you don’t have to be an athlete to benefit from increasing your muscular endurance. As with other types 
+
+of exercise, muscular endurance training can increase your energy levels, help you sleep better, and improve 
+
+your overall health. It can even improve your mood.</p>
+        
+        </div>
+        
+         <img src="assets/img/arm_cover.jpg" class="img-fluid mt-5">
+        
+        <div class="container">
+        
+         <h2 class="text-center text-base section-heading mt-5">ARMS</h2>
+         
+         <h3 class="text-base section-heading mt-5">1. Arnolds</h3>
+         <p>Take two 5 to 10 pound dumbbells and hang them at your sides. Soften up your knees and engage your core. Curl 
+
+the dumbbells up to shoulder height, turn them out and lift them all the way up over your head for an 
+
+overhead press. Bring them back down to your starting position with controlled movement. This move engages 
+
+your biceps, shoulders, and triceps. Do three sets of 15 reps each.</p>
+		<h3 class="text-base section-heading mt-5">2. Bent Over Reverse Fly</h3>
+         <p>This move engages your rear delts, the muscles at the backs of your shoulders. Bend your knees a little bit, 
+
+and move the dumbbells outward in a flying motion until your arms form a straight line across. It's very 
+
+important that your palms are facing your body and not each other. Bring the dumbbells back down and repeat 
+
+this motion. Do 8-10 reps</p>
+         <h3 class="text-base section-heading mt-5">3. Field Goal Post</h3>
+         <p>Bring your elbows up to just below shoulder height with one dumbbell in each hand. Open up your arms into a 
+
+field goal position, stretching them back to activate your shoulder blades. From there, drop your forearms 
+
+down so that they are parallel to the ground before lifting them back up into field goal position and closing 
+
+them in front of your face. Repeat 10 times while keeping your elbows up and your core engaged.</p>
+         <h3 class="text-base section-heading mt-5">4. Overhead Tricep Extension</h3>
+         <p>Put your arms up above your head with a dumbbell in each hand. Drop your hands down behind your head and 
+
+slowly lift them back up. This move is a double whammy on your triceps so you will feel the burn. Keep your 
+
+elbows close to your ears when repeating the motion, and, again, keep your core taught as you do this movie. 
+
+Do 10 reps.
+</p>
+        
+        </div>
+        
+                 <img src="assets/img/abs_cover.jpg" class="img-fluid mt-5">
+        
+        <div class="container">
+        
+         <h2 class="text-center text-base section-heading mt-5">ABS</h2>
+         
+         <p>Regardless of where you fit on the fitness spectrum, effectively training the core comes down to the three 
+
+planes of motion: frontal, sagittal, and transverse. Doing abs exercises in a circuit style keeps the 
+
+intensity high and will likely lead to more fat loss.</p>
+         
+         <h3 class="text-base section-heading mt-5">1. Ab Wheel Rollout</h3>
+         <p>Kneel on the floor and hold an ab wheel Opens a New Window.  beneath your shoulders. Brace your abs and roll 
+
+the wheel forward until you feel you’re about to lose tension in your core and your hips might sag. Roll 
+
+yourself back to start. Do as many reps as you can with perfect form and end the set when you think you might 
+
+break form.</p>
+         
+         <h3 class="text-base section-heading mt-5">2. Arms-High Partial Situp</h3>
+         <p>Lie on your back, knees bent at 90 degrees, and raise your arms straight overhead, keeping them pointing up 
+
+throughout the exercise. Sit up halfway, then steadily return to the floor. That’s one rep.</p>
+         
+         <h3 class="text-base section-heading mt-5">3. Barbell Rollout</h3>
+         <p>Load the barbell Opens a New Window.  with 10-pound plates Opens a New Window.  and kneel on the floor behind 
+
+it. Your shoulders Opens a New Window.  should be over the bar. Brace your abs and roll the bar forward, 
+
+reaching in front of you until you feel your hips are about to sag. Roll yourself back.</p>
+         
+         <h3 class="text-base section-heading mt-5">4. Barbell Russian Twist</h3>
+         <p>Grasp the barbell Opens a New Window.  near the very end again—this time with both hands. Stand with feet at 
+
+shoulder width. Swing the bar to your left, pivoting your feet as needed, then swing to your right.</p>
+         
+         <h3 class="text-base section-heading mt-5">5. Swiss Ball Crunch</h3>
+         <p>Lie back on the Swiss ball Opens a New Window.  with feet shoulder-width apart on the floor. Your lower back 
+
+should be supported by the ball. Place your hands behind your ears and tuck your chin. Curl your body up off 
+
+the ball until you’re sitting up.</p>
+        
+        </div>
+        
+        
+    </div>
+    <!-- Ends of Exercise Section -->
+
+	<!-- Starts of Footer -->
+	<!-- Footer Widgets-->
+	<div class="container-fluid" id="footer-widgets">
+
+		<div class="container">
+
+			<div class="row pb-3">
+
+				<!-- 1st Column -->
+				<div class="col-lg-6">
+
+					<h4 class="text-base mt-5 mb-4">ABOUT TRIM GYM</h4>
+					<p class="text-white text-justify">The TrimGYM was founded by the team of TrimGYM 35 years ago. Perhaps that’s why we’re so focused on proper health and
+						fitness benefits, and less on the luxuries that a small percentage of traditional health club members want. Our team
+						has a long and successful history in the gym business. We opened our first health in 1988, building the business to
+						a total of 9 clubs.
+						<a href="about.html">Read More</a>
+					</p>
+
+				</div>
+
+				<!-- 2nd Column -->
+				<div class="col-lg-4" id="getintouch">
+
+					<h4 class="text-base mt-5 mb-4">GET IN TOUCH</h4>
+
+					<ul class="text-white">
+						<li>
+							<i class="far fa-address-card text-base"></i> 4793, Camel Back Road, NY, USA</li>
+						<li>
+							<i class="far fa-envelope-open text-base"></i> info@trimgym.com</li>
+						<li>
+							<i class="fa fa-phone text-base"></i> +1 347 562 2990</li>
+						<li>
+							<i class="fab fa-skype text-base"></i> trimgym</li>
+
+					</ul>
+
+				</div>
+
+				<!-- 3rd Column -->
+				<div class="col-lg-2">
+
+					<h4 class="text-base mt-5 mb-4">SITEMAP</h4>
+
+					<ul>
+
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="programs.html">PROGRAMS</a>
+						</li>
+						<li>
+							<a href="nutrition.html">NUTRITIONS PLAN</a>
+						</li>
+						<li>
+							<a href="exercise.html">EXERCISES</a>
+						</li>
+						<li>
+							<a href="membership.html">MEMBERSHIP</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--Main Footer -->
+	<div class="container-fluid text-white" id="footer">
+		<div class="container">
+			<div class="copyright-box float-left">Copyright &copy; 2018 - Designed by
+				<a class="text-base" href="#">Trim GYM Team</a>
+			</div>
+			<div class="icon-box text-right">
+				<a href="#" class="fab fa-facebook-f" style="background-color:#3b5998"></a>
+				<a href="#" class="fab fa-twitter" style="background-color:#1da1f2"></a>
+				<a href="#" class="fab fa-instagram" style="background-color:#c32aa3"></a>
+				<a href="#" class="fab fa-google-plus-g" style="background-color:#db4437"></a>
+				<a href="#" class="fab fa-youtube" style="background-color:#ff0000"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Footer -->
+
+	<!-- jQuery JS File -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap 4 JS File -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Wayout JS File -->
+	<script src="assets/js/waypoints.min.js"></script>
+
+	<!-- CounterUp JS File -->
+	<script src="assets/js/counterup.min.js"></script>
+
+	<!-- Flip JS File -->
+	<script src="assets/js/flip.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+	<!-- Lightbox JS File -->
+	<script src="assets/js/lightbox.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,845 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Page Title and Fav Icons -->
+	<link rel="icon" href="assets/img/favicon.png">
+	<title>TRIM GYM | Turn Your FAT Into FIT</title>
+
+	<!-- Fonts -->
+	<!-- Montserat -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+	<!-- Maven Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+	<!-- Style Sheets -->
+	<!-- Bootstrap 4 CSS File -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- FontAwesome CSS File -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+	<!-- Animate CSS File -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+
+	<!-- Lightbox CSS File -->
+	<link rel="stylesheet" href="assets/css/lightbox.min.css">
+
+	<!-- Flip CSS File -->
+	<link rel="stylesheet" href="assets/css/flip.css">
+
+	<!-- Main CSS File -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+	<!-- Starts of Navigation Bar -->
+
+	<div class="container-fluid sticky-top" id="navigation">
+
+		<nav class="navbar navbar-expand-md">
+
+			<a href="index.html" class="navbar-brand">
+				<img src="assets/img/logo.png" alt="Trim Gym Logo" class="logo">
+			</a>
+
+			<span class="navbar-toggler fa fa-bars fa-2x" data-toggle="collapse" data-target="#navbar-collapse"></span>
+
+			<div id="navbar-collapse" class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav ml-auto text-center">
+
+					<li class="nav-item">
+						<a href="index.html" class="nav-link active">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="programs.html" class="nav-link">PROGRAMS</a>
+					</li>
+					<li class="nav-item">
+						<a href="membership.html" class="nav-link">MEMBERSHIP</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">CONTACT</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-none d-lg-block d-md-block d-xl-block">
+							<i class="fa fa-user"></i>
+						</a>
+					</li>
+					<li class="nav-item" data-toggle="modal" data-target="#userModal">
+						<a href="#" class="nav-link d-block d-md-none d-lg-none d-xl-none">JOIN US</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</nav>
+
+	</div>
+
+	<!-- Ends of Navigation Bar -->
+
+	<!-- Starts of Modals -->
+
+	<!-- Login/Signup Modal -->
+	<div class="modal fade" id="userModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title text-base">Join US!</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+
+				<!-- Modal Body -->
+				<div class="modal-body">
+
+					<ul class="nav nav-pills nav-justified mb-3">
+
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="pill" href="#login">LOGIN</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="pill" href="#signup">SIGNUP</a>
+						</li>
+
+					</ul>
+
+					<div class="tab-content">
+
+						<div class="tab-pane fade show active" id="login">
+
+							<!-- Login Form -->
+							<form method="post">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox"> Remember me
+									</label>
+									<br>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mb-3">LOGIN</button>
+							</form>
+
+						</div>
+
+						<div class="tab-pane fade" id="signup">
+
+							<!-- Signup  Form -->
+							<form method="post">
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="First Name" required>
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" placeholder="Last Name" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required>
+								</div>
+
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required>
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Repeat Password" required>
+								</div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="male">
+									<label class="form-check-label">Male</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="gender" value="female">
+									<label class="form-check-label">Female</label>
+								</div>
+
+								<button type="submit" class="btn-base btn-block mt-3 mb-3">SIGNUP</button>
+
+								<small class="form-text text-muted mb-3">
+									By signing up, you agree to our
+									<a href="#">Terms & Conditions.</a>
+								</small>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Modals -->
+
+	<!-- Starts ofImage Carousel -->
+	<div class="carousel slide" data-ride="carousel" id="main_slider" data-interval="3000">
+
+		<!-- Image Carousel Items -->
+		<div class="carousel-inner">
+
+			<!-- Pic 1 -->
+			<div class="carousel-item active">
+				<img src="assets/img/slider/pic1.jpg" alt="Trim GYM Image Slider Pic1" class="active">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated fadeInDown text-base">TRIM GYM</h1>
+				</div>
+			</div>
+
+			<!-- Pic 2 -->
+			<div class="carousel-item">
+				<img src="assets/img/slider/pic2.jpg" alt="Trim GYM Image Slider Pic2">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated fadeInUp text-base">TURN YOUR "FAT" INTO "FIT"</h1>
+				</div>
+			</div>
+
+			<!-- Pic 3 -->
+			<div class="carousel-item">
+				<img src="assets/img/slider/pic3.jpg" alt="Trim GYM Image Slider Pic3">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated fadeInLeft text-base">AIR CONDITIONED ROOMS</h1>
+				</div>
+			</div>
+
+			<!-- Pic 4 -->
+			<div class="carousel-item">
+				<img src="assets/img/slider/pic4.jpg" alt="Trim GYM Image Slider Pic4">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated fadeInRight text-base">LATEST MACHINES</h1>
+				</div>
+			</div>
+
+			<!-- Pic 5 -->
+			<div class="carousel-item">
+				<img src="assets/img/slider/pic5.jpg" alt="Trim GYM Image Slider Pic5">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated fadeInDown text-base">BEST PRICE PLANS</h1>
+				</div>
+			</div>
+
+			<!-- Pic 6 -->
+			<div class="carousel-item">
+				<img src="assets/img/slider/pic6.jpg" alt="Trim GYM Image Slider Pic5">
+				<div class="carousel-caption bg-base-block d-none d-lg-block">
+					<h1 class="animated slideInRight text-base">MALE/FEMALE SEPRATED ROOMS</h1>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Image Carousel Indicators -->
+		<ul class="carousel-indicators">
+			<li data-target="#main_slider" data-slide-to="0" class="active"></li>
+			<li data-target="#main_slider" data-slide-to="1"></li>
+			<li data-target="#main_slider" data-slide-to="2"></li>
+			<li data-target="#main_slider" data-slide-to="3"></li>
+			<li data-target="#main_slider" data-slide-to="4"></li>
+		</ul>
+
+		<!-- Image Carousel Next/Previous Buttons -->
+		<a href="#main_slider" data-slide="prev" class="carousel-control-prev">
+			<span class="fa fa-angle-double-left fa-2x text-base"></span>
+		</a>
+
+		<a href="#main_slider" data-slide="next" class="carousel-control-next">
+			<span class="fa fa-angle-double-right fa-2x text-base"></span>
+		</a>
+
+	</div>
+
+	<!-- Ends of Image Carousel -->
+
+	<!-- Starts of Our Services Section -->
+
+	<div class="container-fluid" id="services">
+		<div class="container">
+			<h2 class="text-center text-base animated fadeInDown section-heading">OUR SERVICES</h2>
+
+			<div class="row text-center">
+
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-dumbbell fa-3x text-base"></i>
+								<h6 class="text-base">Personal Training</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-hand-holding-heart fa-3x text-base"></i>
+								<h6 class="text-base">Pilates</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-heart fa-3x text-base"></i>
+								<h6 class="text-base">Yoga Classes</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-users fa-3x text-base"></i>
+								<h6 class="text-base">Group Classes</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-weight fa-3x text-base"></i>
+								<h6 class="text-base">Weight Management</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<a href="programs.html">
+						<div class="card">
+							<div class="card-body">
+								<i class="fas fa-apple-alt fa-3x text-base"></i>
+								<h6 class="text-base">Nutrition Counseling</h6>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Our Services Section -->
+
+	<!-- Starts of Opening Hours/Price Plans/Why Choose Us Section -->
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- Price Plan Column -->
+			<div class="col-lg-4 text-center bg-base three-col-section pb-5">
+				<i class="fas fa-user-circle fa-3x text-white"></i>
+				<h4 class="text-white mb-3 animated fadeInDown">MEMBERSHIP</h4>
+				<p class="text-white text-center">Let's get you started with TRIM-GYM.
+					<br> We've got Best Membership Plans that fit any budget. Take the Membership that is right for you.</p>
+				<a href="membership.html">
+					<button class="btn-base-inverse">READ MORE</button>
+				</a>
+			</div>
+
+			<!-- Opening Hours Column -->
+			<div class="col-lg-4 text-center bg-white three-col-section">
+				<i class="fa fa-clock fa-3x text-base"></i>
+				<h4 class="text-base mb-3 animated fadeInDown">OPENING HOURS</h4>
+				<p class="text-base text-center">We have flexible time hours for our clients.</p>
+				<table class="table table-sm text-base">
+					<tr>
+						<td>Monday - Friday</td>
+						<td>9:00 - 21:00</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>9:00 - 18:00</td>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td>9:00 - 16:00</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- Why Choose Us Column -->
+			<div class="col-lg-4 text-center bg-base three-col-section">
+				<i class="fa fa-check-circle fa-3x text-white"></i>
+				<h4 class="text-white mb-3 animated fadeInDown">WHY CHOOSE US?</h4>
+				<div class="why-choose-us text-center">
+					<ul class="text-white">
+						<li>
+							<i class="fa fa-check"></i> Latest Machines</li>
+						<li>
+							<i class="fa fa-check"></i> Flexible Hours</li>
+						<li>
+							<i class="fa fa-check"></i> Membership Plans</li>
+						<li>
+							<i class="fa fa-check"></i> Air Conditined Rooms</li>
+						<li>
+							<i class="fa fa-check"></i> Locker Rooms</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Opening Hours/Price Plans/Why Choose Us Section -->
+
+	<!-- Starts of Ladies Only Section -->
+
+	<div class="container-fluid" id="ladiesOnly">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8 text-center">
+
+					<h2 class="text-base section-heading">FOR LADIES ONLY</h2>
+
+					<p class="text-white">For those women who are adverse to training in a coed environment, we offer a special workout room set aside for ladies
+						only. It features most of the same cardio equipment & offerings as the rest of the gym so you can work out & enjoy
+						the same privacy as you would get at an all-women's club.</p>
+
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Ends of Ladies Only Section -->
+
+	<!-- Starts of gallery Section -->
+
+	<div class="container-fluid" id="gallery-section">
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery1.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery1.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery2.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery2.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery3.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery3.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery4.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery4.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery5.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery5.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery6.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery6.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery7.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery7.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery8.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery8.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery9.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery9.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery10.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery10.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery11.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery11.jpg" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-4">
+				<a href="assets/img/gallery/gallery12.jpg" data-lightbox="img-gallery">
+					<img src="assets/img/gallery/gallery12.jpg" class="img-fluid">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Gallery Section -->
+
+	<!-- Starts of Video Section -->
+
+	<div class="container-fluid" id="video">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-6">
+
+					<iframe width="100%" height="350px" src="https://www.youtube.com/embed/eLmOOH6c0Vg" frameborder="0" allow="autoplay; encrypted-media"
+					 allowfullscreen></iframe>
+
+				</div>
+
+				<div class="col-lg-6 text-center">
+
+					<h2 class="text-base mt-5 section-heading">Inside The TRIM-GYM</h2>
+
+					<div class="row">
+
+						<div class="col-lg-1"></div>
+
+						<div class="col-lg-10">
+
+							<p>Take a look inside The Trim Gym. We are the most complete fitness center in the area, offering group fitness, group
+								training, personal training, personal fitness, indoor/outdoor racquet sports, gymnasium, aquatics, CrossFit, yoga,
+								and a huge variety of strength and conditioning equipment. Come join our community of fitness today.</p>
+						</div>
+
+						<div class="col-lg-1"></div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Ends of Video Section -->
+    
+    <!-- Starts of Exercise & Nutrition Section -->
+    
+    	<div class="container-fluid" id="exercise-section">
+        
+        	<div class="row">
+            
+            	<!-- Exercise Section -->
+            	<div class="col-lg-6 bg-base p-5">
+                
+                	<div class="container text-white text-center">
+                    
+	                    <i class="fas fa-dumbbell fa-3x mb-3"></i>
+                    	<h2 class="mb-3 font-weight-bold">EXERCISE</h2>
+                        
+                        <p>Click below to see Exercise we offers</p>
+                        <a href="exercise.html"><button class="btn-base-inverse">EXERCISE WE OFFER</button></a>
+                    
+                    </div>
+                
+                </div>
+                            
+            	<!-- Nutrition Section -->
+            	<div class="col-lg-6 p-5">
+                
+                    <div class="container text-base text-center">
+                    
+                    	<i class="fas fa-apple-alt fa-3x mb-3"></i>
+                    	<h2 class="mb-3 font-weight-bold">NUTRITION PLAN</h2>
+                        
+                        <p>Check out our Nutrition Diet Plans</p>
+                        <a href="nutrition.html"><button class="btn-base">SEE OUR NUTRITION PLAN</button></a>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    <!-- Ends of Exercise & Nutrition Section -->
+
+	<!-- Starts of Subscribe Us Section -->
+
+	<div class="container-fluid" id="subscribe-us">
+
+		<div class="container">
+
+			<div class="row text-center">
+
+				<div class="col-lg-6">
+
+					<i class="far fa-envelope-open fa-5x text-base mb-3"></i>
+
+					<h2 class="text-base">SUBSCRIBE US</h2>
+					<p class="text-base">Subscribe our newletter to stay connected!</p>
+
+				</div>
+
+				<div class="col-lg-6">
+
+					<form action="#" class="mt-5">
+
+						<input type="email" placeholder="Enter your Email Address.." class="form-control" required>
+						<input type="submit" value="SUBSCRIBE" class="submit btn-block">
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Ends of Subscribe Us Section -->
+
+	<!-- Starts of Advertisement Section -->
+
+	<div class="container-fluid" id="advertisement">
+
+		<h2 class="text-center text-base section-heading">ADVERTISEMENT SECTION</h2>
+
+		<div id="customers-grid">
+			<div class="customers-grid-row clearfix">
+
+				<div class="customers-grid-cell" id="customers-grid-cell-0" data-image-idx="0">
+					<div class="front" style="background-position: -3625px 0"></div>
+					<div class="back" style="background-position: -3625px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-1" data-image-idx="1">
+					<div class="front" style="background-position: -4125px 0"></div>
+					<div class="back" style="background-position: -4125px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-2" data-image-idx="2">
+					<div class="front" style="background-position: -500px 0"></div>
+					<div class="back" style="background-position: -500px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-3" data-image-idx="3">
+					<div class="front" style="background-position: -6125px 0"></div>
+					<div class="back" style="background-position: -6125px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-4" data-image-idx="4">
+					<div class="front" style="background-position: -8500px 0"></div>
+					<div class="back" style="background-position: -8500px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-5" data-image-idx="5">
+					<div class="front" style="background-position: -6500px 0"></div>
+					<div class="back" style="background-position: -6500px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-6" data-image-idx="6">
+					<div class="front" style="background-position: -1875px 0"></div>
+					<div class="back" style="background-position: -1875px 0"></div>
+				</div>
+
+				<div class="customers-grid-cell" id="customers-grid-cell-7" data-image-idx="7">
+					<div class="front" style="background-position: -8750px 0"></div>
+					<div class="back" style="background-position: -8750px 0"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Advertisement Section -->
+
+	<!-- Starts of CounterUp Section -->
+
+	<div class="container-fluid" id="counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="card counter-cards">
+						<h1 class="counter">72</h1>
+						<h5>TRAINERS</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="card counter-cards">
+						<h1 class="counter">520</h1>
+						<h5>HAPPY CLIENTS</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="card counter-cards">
+						<h1 class="counter">5</h1>
+						<h5>CITIES</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="card counter-cards">
+						<h1 class="counter">9</h1>
+						<h5>CLUBS</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of CounterUp Section -->
+
+	<!-- Starts of Footer -->
+	<!-- Footer Widgets-->
+	<div class="container-fluid" id="footer-widgets">
+
+		<div class="container">
+
+			<div class="row pb-3">
+
+				<!-- 1st Column -->
+				<div class="col-lg-6">
+
+					<h4 class="text-base mt-5 mb-4">ABOUT TRIM GYM</h4>
+					<p class="text-white text-justify">The TrimGYM was founded by the team of TrimGYM 35 years ago. Perhaps that’s why we’re so focused on proper health and fitness benefits, and less on the luxuries that a small percentage of traditional health club members want. Our team has a long and successful history in the gym business. We opened our first health in 1988, building the business to a total of 9 clubs. <a href="about.html">Read More</a>
+					</p>
+
+				</div>
+
+				<!-- 2nd Column -->
+				<div class="col-lg-4" id="getintouch">
+
+					<h4 class="text-base mt-5 mb-4">GET IN TOUCH</h4>
+
+					<ul class="text-white">
+						<li>
+							<i class="far fa-address-card text-base"></i> 4793, Camel Back Road, NY, USA</li>
+						<li>
+							<i class="far fa-envelope-open text-base"></i> info@trimgym.com</li>
+						<li>
+							<i class="fa fa-phone text-base"></i> +1 347 562 2990</li>
+						<li>
+							<i class="fab fa-skype text-base"></i> trimgym</li>
+
+					</ul>
+
+				</div>
+
+				<!-- 3rd Column -->
+				<div class="col-lg-2">
+
+					<h4 class="text-base mt-5 mb-4">SITEMAP</h4>
+
+					<ul>
+
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="programs.html">PROGRAMS</a>
+						</li>
+						<li>
+							<a href="nutrition.html">NUTRITIONS PLAN</a>
+						</li>
+						<li>
+							<a href="exercise.html">EXERCISES</a>
+						</li>
+						<li>
+							<a href="membership.html">MEMBERSHIP</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--Main Footer -->
+	<div class="container-fluid text-white" id="footer">
+		<div class="container">
+			<div class="copyright-box float-left">Copyright &copy; 2018 - Designed by
+				<a class="text-base" href="#">Trim GYM Team</a>
+			</div>
+			<div class="icon-box text-right">
+				<a href="#" class="fab fa-facebook-f" style="background-color:#3b5998"></a>
+				<a href="#" class="fab fa-twitter" style="background-color:#1da1f2"></a>
+				<a href="#" class="fab fa-instagram" style="background-color:#c32aa3"></a>
+				<a href="#" class="fab fa-google-plus-g" style="background-color:#db4437"></a>
+				<a href="#" class="fab fa-youtube" style="background-color:#ff0000"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ends of Footer -->
+
+	<!-- jQuery JS File -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap 4 JS File -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Wayout JS File -->
+	<script src="assets/js/waypoints.min.js"></script>
+
+	<!-- CounterUp JS File -->
+	<script src="assets/js/counterup.min.js"></script>
+
+	<!-- Flip JS File -->
+	<script src="assets/js/flip.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+	<!-- Lightbox JS File -->
+	<script src="assets/js/lightbox.min.js"></script>
+
+</body>
+
+</html>

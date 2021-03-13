@@ -1,0 +1,29 @@
+  .customers-grid-row {
+    height: 100px;
+    overflow: hidden; /* Hide overflowing tiles */
+    text-align: center;
+  }
+
+  .customers-grid-row + .customers-grid-row {
+    margin-top: 20px;
+  }
+
+  .customers-grid-cell {
+    display: none; /* Show after flip is inited */
+    height: 100px;
+    width: 123px;
+  }
+
+  .customers-grid-cell + .customers-grid-cell {
+    margin-left: 11px;
+  }
+
+  .customers-grid-cell .front,
+  .customers-grid-cell .back {
+    height: 100px;
+    width: 125px;
+    background-color: #FFF;
+    background-image: url('../img/advertisement.png');
+    background-size: 8875px 100px;
+    transition: transform 0.5s ease-out !important;
+  }
